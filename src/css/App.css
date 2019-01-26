@@ -1,0 +1,29 @@
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  width: 45px;
+  height: 45px;
+}
+
+.App-header {
+  background-color: #63bfae;
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+}
+
+.App-link {
+  color: #333;
+  padding: 13px 10px;
+  background-color: #5cd8bc;
+  text-decoration: none;
+}
+
+.App-link:hover {
+  background-color: #47D3B4;
+}
