@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SearchBar from './SearchBar';
 import Api from './Api';
 import logo from '../img/logo.svg';
 import '../css/App.css';
@@ -19,6 +20,7 @@ class App extends Component {
           </a>
         </header>
         
+        <SearchBar />
         <Api />
       </div>
     );
