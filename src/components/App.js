@@ -1,10 +1,32 @@
 import React, { Component } from 'react';
-import SearchBar from './SearchBar';
-import Api from './Api';
+// import SearchBar from './SearchBar';
 import logo from '../img/logo.svg';
 import '../css/App.css';
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      pictures: [],
+    }
+  }
+
+  componentDidMount() {
+    fetch('https://api.flickr.com/services/rest/?method=flickr.photos.getRecent&api_key=5f0ca9ae5c0961037501f34373524d33&tags=dogs&per_page=10&format=json&nojsoncallback=1')
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(j) {
+      let picArray = j.photos.photo.map((pic) => {
+        var srcPath = 'https://farm'+pic.farm+'.staticflickr.com/'+pic.server+'/'+pic.id+'_'+pic.secret+'.jpg';
+        return(
+          <img alt="dogs" src={srcPath}></img>
+        )
+      })
+      this.setState({ pictures: picArray });
+    }.bind(this))
+  }
+
   render() {
     return (
       <div className="App">
@@ -19,9 +41,10 @@ class App extends Component {
             Checkout the repo.
           </a>
         </header>
-        
-        <SearchBar />
-        <Api />
+
+        {this.state.pictures}
+
+        {/* <SearchBar /> */}
       </div>
     );
   }
