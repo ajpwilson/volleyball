@@ -17,6 +17,11 @@
   padding: 10px;
 }
 
+h1 {
+  font-size: 1.4em;
+  margin: 10px 0 0;
+}
+
 .App-link {
   color: #333;
   padding: 13px 10px;
