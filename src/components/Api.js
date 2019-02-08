@@ -6,63 +6,11 @@ const API_KEY = process.env.REACT_APP_API_KEY;
 
 const method = `flickr.interestingness.getList`;
 // const method = `flickr.photos.getRecent`;
+// const method = `flickr.photos.getPopular`;
 const format = `json`;
 const jsonCallback = 1;
 const pageCount = 20;
-// const extras = `owner_name,description,url_o`;
-const extras = `description, license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o`;
-
-// class Api extends Component {
-//   constructor(props) {
-//     super(props);
-
-//     this.state = {
-//       items: [],
-//     }
-//   }
-
-//   componentDidMount() {
-//     const url = `${baseUrl}?method=flickr.photos.getRecent&api_key=${API_KEY}&per_page=30&format=json&nojsoncallback=1&extras=owner_name,description,url_o,user_id`;
-
-//     fetch(url)
-//       .then(response => response.json())
-//       .then(result => {
-//         this.setState({
-//           items: result.photos.photo
-//         })
-//       }
-//     );
-//   }
-
-//   // assemble image URL
-//   imageURL(item) {
-//     return 'http://farm' + item.farm + '.staticflickr.com/' + item.server + '/' + item.id + '_' + item.secret + '.jpg'
-//   }
-
-//   render() {
-//     const { items } = this.state;
-
-//     return (
-//       this.state.items.map((item, i =>
-//       <div className="wrapper">
-//         <ul className="list">
-//           <li className="card" key={this.state.items}>
-//             {this.state.items.length ?
-//               this.state.items.map((item, index) =>
-//                 <div key={index} onClick={this.selectImage.bind(this,this.imageURL(item))}>
-//                   <img className="media-gallery-thumbnails__img" src={this.imageURL(item)}/>
-//                 </div>)
-//               : <div>Loading...</div>
-//             }
-//           </li>
-//         </ul>
-//       </div>
-//     )
-//   }
-// }
-
-// export default Api;
-
+const extras = `description, owner_name, tags, url_z, url_o`;
 
 class Api extends Component {
 
@@ -107,12 +55,12 @@ class Api extends Component {
                       <img alt={item.id} src={item.url_z}/>
                     </div>
                     <div className="name">
-                      <h3>{item.title} <span>by {item.ownername}</span></h3>
+                      <h3>{item.title} <br/><span>by {item.ownername}</span></h3>
                     </div>
                     <div className="content">
-                      <p>{item.description._content.length}</p>
+                      <p>{item.description._content.substr(0, 200)}...</p>
                     </div>
-                    <div className="tags">Tags to go here...</div>
+                    <div className="tags"><h4>Tags</h4><p>{item.tags.substr(0, 50)}...</p></div>
                   </div>
 
                   )
