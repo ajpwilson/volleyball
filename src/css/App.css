@@ -27,20 +27,26 @@ h1 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 22px;
+  margin: 10px 0;
 }
 
 h3 span {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 h4 {
-  margin: 5px 0;
+  margin: 0 0 5px;
 }
 
 p {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: #63bfae;
+  text-decoration: none;
 }
 
 .App-link {
@@ -67,7 +73,8 @@ p {
 }
 
 .card-container .card {
-  background-color: #fff;
+  background-color: #f9f8f4;
+  box-shadow: 0 8px 6px -6px #9c9875;
   flex: 0 0 300px;
   margin: 10px;
   padding: 20px 15px;
