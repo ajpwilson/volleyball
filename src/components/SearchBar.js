@@ -10,7 +10,8 @@ class SearchBar extends Component {
   }
 
   render() {
-    const { searchTerm, onFormSubmit } = this;
+    const { onFormSubmit } = this;
+    const { searchTerm } = this.state;
 
     return (
       <div className="search-wrapper">
