@@ -10,14 +10,14 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1>Flickr Api</h1>
+          <h1>Flickr Photo Stream</h1>
           <a
             className="App-link"
             href="https://github.com/ajpwilson/volleyball"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Checkout the repo.
+            Repo
           </a>
         </header>
 
