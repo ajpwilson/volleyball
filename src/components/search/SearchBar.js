@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import './SearchBar.css';
 
 class SearchBar extends Component {
 
@@ -15,20 +16,25 @@ class SearchBar extends Component {
     return (
       <div className="search-wrapper">
         <form onSubmit={this.handleSubmit}>
-          <label>
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={updateSearchTerm}
-              placeholder="Search..."
-            />
-          </label>
+          <input
+            className="search"
+            type="text"
+            value={searchTerm}
+            onChange={updateSearchTerm}
+            placeholder="Search..."
+          />
           <select value={perPage} onChange={updatePerPage}>
             <option>20</option>
             <option>50</option>
             <option>100</option>
           </select>
-          <input type="submit" value="Search" disabled={!searchTerm} />
+          <button
+            className="btn"
+            type="submit"
+            disabled={!searchTerm}
+          >
+          Search
+          </button>
         </form>
       </div>
     );

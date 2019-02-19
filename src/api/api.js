@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
-import SearchBar from "../components/SearchBar";
-import ImageList from "../components/ImageList";
+import SearchBar from "../components/search/SearchBar";
+import ImageList from "../components/cards/ImageList";
 
 // create an instance of axios with the url and default params set
 const axiosInstance = axios.create({

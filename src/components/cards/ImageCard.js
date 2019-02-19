@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import './Cards.css';
 
 class ImageCard extends Component {
 
@@ -9,7 +10,7 @@ class ImageCard extends Component {
       <div className="card-container">
         {items.length ?
           items.map((item, i) =>
-            <div key={`card$-{i}`} className="card">
+            <div key={`card-${i}`} className="card">
               <div className="image">
                 <img alt={item.id} src={item.url_z}/>
               </div>
@@ -17,12 +18,12 @@ class ImageCard extends Component {
                 <h3><a href={item.url_o}>{item.title}</a> <br/><span>by <a href={`https://www.flickr.com/photos/${item.owner}`}>{item.ownername}</a></span></h3>
               </div>
               <div className="content">
-                <p>{item.description._content.substr(0, 150)}...</p>
+                <p>{item.description._content ? item.description._content.substr(0, 100) : `No description` }</p>
               </div>
               <div className="tags">
                 {(item.tags.split(' ') || []).map((tag, i) =>
                   <span key={`tag-${i}`} className="tag">
-                  {tag}
+                  {tag ? tag : `No tags`}
                 </span>)}
               </div>
             </div>

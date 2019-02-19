@@ -1,0 +1,32 @@
+.search-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.search-wrapper form {
+  margin: 20px;
+}
+
+.search {
+  width: 200px;
+  height: 31px;
+  padding: 0 10px;
+  margin: 5px;
+  font-size: 14px;
+  border: 1px solid #A4A4A4;
+  border-radius: 4px;
+}
+
+select {
+  height: 33px;
+  margin: 5px;
+  vertical-align: bottom;
+}
+
+.btn {
+  padding: 7px 20px;
+  border-radius: 4px;
+  border: 1px solid #A4A4A4;
+  font-size: 14px;
+  margin: 5px;
+}
