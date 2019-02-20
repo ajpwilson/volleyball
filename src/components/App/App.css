@@ -25,6 +25,7 @@ h1 {
 h3 {
   font-size: 14px;
   margin: 10px 0;
+  overflow: hidden;
 }
 
 h3 span {
