@@ -14,7 +14,7 @@ This project was created with `Create React App`.
 ---
 Future Improvments (things to learn):
 
-1) Tags and Users to be searchable
+1) Tags and users to be searchable
 2) Add redux
 3) Add routing
 4) Add pagination
