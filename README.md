@@ -1,4 +1,3 @@
-This project was created with `Create React App`.
 
 This app is currently hosted here: https://ajpwilson.github.io/volleyball/
 
@@ -11,3 +10,6 @@ and then
 `npm start`
 
 This runs the app in development mode.
+
+
+This project was created with `Create React App`.
