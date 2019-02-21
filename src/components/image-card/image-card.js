@@ -14,7 +14,7 @@ class ImageCard extends Component {
               <img alt={item.id} src={item.url_z}/>
             </div>
             <div className={styles.name}>
-              <h3><a href={item.url_o}>{item.title}</a> <br/><span>by <a href={`https://www.flickr.com/photos/${item.owner}`}>{item.ownername}</a></span></h3>
+              <h3><a href={`https://www.flickr.com/photos/${item.owner}/${item.id}`} rel="noopener noreferrer" target="_blank">{item.title}</a> <br/><span>by <a href={`https://www.flickr.com/photos/${item.owner}`}>{item.ownername}</a></span></h3>
             </div>
             <div className={styles.content}>
               <p>{item.description._content ? item.description._content.substr(0, 100) : `No description` }</p>

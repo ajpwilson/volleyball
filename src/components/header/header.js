@@ -3,7 +3,7 @@ import styles from './header.module.css';
 
 const Header = () => (
   <header className={styles.header}>
-    <h1>Flickr Photo Stream</h1>
+    <h1><a href="/">Flickr Photo Stream</a></h1>
     <a
       className={styles.link}
       href='https://github.com/ajpwilson/volleyball'
