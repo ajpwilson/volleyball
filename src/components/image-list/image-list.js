@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import ImageCard from './ImageCard';
-import './Cards.css';
+import ImageCard from './../image-card/image-card';
+import './image-list.css';
 
 class ImageList extends Component {
 

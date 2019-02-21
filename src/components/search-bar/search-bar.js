@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import './SearchBar.css';
+import './search-bar.css';
 
 class SearchBar extends Component {
 
-  // onSubmit cancel browser default and fetch some photos
+  // onSubmit cancel browser default and fetch requested photos.
   handleSubmit = event => {
     event.preventDefault();
     this.props.fetchPhotos();
-    console.log(this.props.fetchPhotos());
   };
 
   render() {

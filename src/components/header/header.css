@@ -1,0 +1,21 @@
+.App-header {
+  background: linear-gradient(to right,#fce4ed,#ffe8cc);
+  min-height: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #333;
+  padding: 10px;
+}
+
+.App-link {
+  color: #333;
+  padding: 13px 10px;
+  background: rgb(238, 170, 87, 0.8);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.App-link:hover {
+  background: rgb(238, 170, 87, 1);
+}
