@@ -3,7 +3,7 @@ import axios from 'axios';
 import Header from '../header/header';
 import SearchBar from '../search-bar/search-bar';
 import ImageList from '../image-list/image-list';
-import './app.css';
+import styles from './app.module.css';
 
 // I've created an axios instance with the url and default params set so I can just reference the code.
 const axiosInstance = axios.create({
@@ -53,7 +53,7 @@ class App extends Component {
     const { items, searchTerm, perPage } = this.state;
 
     return (
-      <div className="App">
+      <div className={styles.app}>
 
         <Header />
         <SearchBar

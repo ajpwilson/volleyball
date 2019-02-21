@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './search-bar.css';
+import styles from './search-bar.module.css';
 
 class SearchBar extends Component {
 
@@ -13,10 +13,10 @@ class SearchBar extends Component {
     const { searchTerm, updateSearchTerm, perPage, updatePerPage } = this.props;
 
     return (
-      <div className="search-wrapper">
+      <div className={styles.wrapper}>
         <form onSubmit={this.handleSubmit}>
           <input
-            className="search"
+            className={styles.search}
             type="text"
             value={searchTerm}
             onChange={updateSearchTerm}
@@ -28,7 +28,7 @@ class SearchBar extends Component {
             <option>100</option>
           </select>
           <button
-            className="btn"
+            className={styles.btn}
             type="submit"
             disabled={!searchTerm}
           >

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ImageCard from './../image-card/image-card';
-import './image-list.css';
+import styles from './image-list.module.css';
 
 class ImageList extends Component {
 
@@ -8,12 +8,16 @@ class ImageList extends Component {
     const { items } = this.props;
 
     return (
-      <div className="card-wrapper">
-        <div className="card-count">
-          <div>Photos: {items.length}</div>
+      <div className={styles.wrapper}>
+        <div className={styles.count}>
+          {items.length === 0 ? <div><p>Search for something above.</p></div> :
+          <div><p>Photos: {items.length}</p></div>
+          }
         </div>
 
-        <ImageCard items={items} />
+        {!items
+        ? <p className={styles.loading}>Loading...</p>
+        : <ImageCard items={items} />}
       </div>
     );
   }

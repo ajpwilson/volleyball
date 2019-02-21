@@ -1,9 +1,9 @@
-.search-wrapper {
+.wrapper {
   display: flex;
   justify-content: center;
 }
 
-.search-wrapper form {
+form {
   margin: 20px;
 }
 
