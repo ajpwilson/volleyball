@@ -1,13 +1,13 @@
 {
-  "main.css": "/volleyball/static/css/main.0b59101e.chunk.css",
-  "main.js": "/volleyball/static/js/main.b1bf1a09.chunk.js",
-  "main.js.map": "/volleyball/static/js/main.b1bf1a09.chunk.js.map",
+  "main.css": "/volleyball/static/css/main.3f2ba000.chunk.css",
+  "main.js": "/volleyball/static/js/main.d50df963.chunk.js",
+  "main.js.map": "/volleyball/static/js/main.d50df963.chunk.js.map",
   "runtime~main.js": "/volleyball/static/js/runtime~main.c9afc1fc.js",
   "runtime~main.js.map": "/volleyball/static/js/runtime~main.c9afc1fc.js.map",
-  "static/js/2.e73551dc.chunk.js": "/volleyball/static/js/2.e73551dc.chunk.js",
-  "static/js/2.e73551dc.chunk.js.map": "/volleyball/static/js/2.e73551dc.chunk.js.map",
+  "static/js/2.38e65908.chunk.js": "/volleyball/static/js/2.38e65908.chunk.js",
+  "static/js/2.38e65908.chunk.js.map": "/volleyball/static/js/2.38e65908.chunk.js.map",
   "index.html": "/volleyball/index.html",
-  "precache-manifest.05b4f1f93c2c4d1afcfe11e07a4e94c8.js": "/volleyball/precache-manifest.05b4f1f93c2c4d1afcfe11e07a4e94c8.js",
+  "precache-manifest.4998525ac9d2a234afb66a1094cd781c.js": "/volleyball/precache-manifest.4998525ac9d2a234afb66a1094cd781c.js",
   "service-worker.js": "/volleyball/service-worker.js",
-  "static/css/main.0b59101e.chunk.css.map": "/volleyball/static/css/main.0b59101e.chunk.css.map"
+  "static/css/main.3f2ba000.chunk.css.map": "/volleyball/static/css/main.3f2ba000.chunk.css.map"
 }
