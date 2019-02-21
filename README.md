@@ -1,8 +1,6 @@
-This project was created with [Create React App].
+This project was created with `Create React App`.
 
-This app is currently hosted here:
-
-https://ajpwilson.github.io/volleyball/
+This app is currently hosted here: https://ajpwilson.github.io/volleyball/
 
 To run locally run these commands:
 
