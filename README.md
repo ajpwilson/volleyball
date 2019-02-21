@@ -6,10 +6,10 @@ https://ajpwilson.github.io/volleyball/
 
 To run locally run these commands:
 
-## `npm install`
+`npm install`
 
 and then
 
-## `npm start`
+`npm start`
 
 This runs the app in development mode.
