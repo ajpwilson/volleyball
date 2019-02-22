@@ -15,7 +15,7 @@ This project was created with `Create React App`.
 Future Improvments (things to learn):
 
 1) Tags and users to be searchable.
-2) Implement redux.
+2) Understand and implement redux.
 3) Implement routing.
 4) Understand and implement PropTypes.
 5) Add animation.
@@ -23,4 +23,4 @@ Future Improvments (things to learn):
 7) Select favourite image functionality.
 8) Fully filterable.
 9) Understand and implement Hooks.
-10) Implement testing.
+10) Understand and implement testing.
