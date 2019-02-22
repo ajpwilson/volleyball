@@ -20,7 +20,7 @@ Future Improvments (things to learn):
 4) Understand and implement PropTypes.
 5) Add animation.
 6) Implement pagination.
-7) Select favorite image functionality.
+7) Select favourite image functionality.
 8) Fully filterable.
 9) Understand and implement Hooks.
 10) Implement testing.
