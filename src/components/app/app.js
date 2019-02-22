@@ -5,7 +5,7 @@ import SearchBar from '../search-bar/search-bar';
 import ImageList from '../image-list/image-list';
 import styles from './app.module.css';
 
-// I've created an axios instance with the url and default params set so I can just reference the code.
+// I've created an axios instance with the url and default params set to avoid repetition.
 const axiosInstance = axios.create({
   baseURL: 'https://api.flickr.com/services/rest/',
   params: {
@@ -22,7 +22,8 @@ class App extends Component {
   state = {
     searchTerm: '',
     perPage: 20,
-    items: []
+    items: [],
+    total: undefined
   };
 
   // When the search is updated onChange, the new value is set in the state.
@@ -44,13 +45,20 @@ class App extends Component {
 
     // Using the axios instance with default params as to not to use unnecessary code by repeating myself.
     const { data } = await axiosInstance({ params });
-    // Pulling out photos array from response and setting them to state
-    this.setState({ items: data.photos.photo });
+    // Pulling out photos array from response and setting them to state.
+
+    if (data.photos) {
+      // Pulling out arrays of photos and total number of results from response and setting them to state
+      this.setState({
+        items: data.photos.photo,
+        total: data.photos.total
+      });
+    }
   };
 
   render() {
     const { updateSearchTerm, updatePerPage, fetchPhotos } = this;
-    const { items, searchTerm, perPage } = this.state;
+    const { items, total, searchTerm, perPage } = this.state;
 
     return (
       <div className={styles.app}>
@@ -63,7 +71,10 @@ class App extends Component {
           updatePerPage={updatePerPage}
           fetchPhotos={fetchPhotos}
         />
-        <ImageList items={items} />
+        <ImageList
+          items={items}
+          total={total}
+        />
 
       </div>
     );

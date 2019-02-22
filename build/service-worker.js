@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/volleyball/precache-manifest.4998525ac9d2a234afb66a1094cd781c.js"
+  "/volleyball/precache-manifest.fd80415e06dcc3e2a3651a5a59684517.js"
 );
 
 workbox.clientsClaim();

@@ -23,9 +23,11 @@ class SearchBar extends Component {
             placeholder="Search..."
           />
           <select value={perPage} onChange={updatePerPage}>
-            <option>20</option>
-            <option>50</option>
-            <option>100</option>
+            {[20, 50, 100].map(option =>
+              <option key={`option-${option}`} value={option}>
+                show {option} results
+              </option>
+            )}
           </select>
           <button
             className={styles.btn}
