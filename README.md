@@ -14,12 +14,13 @@ This project was created with `Create React App`.
 ---
 Future Improvments (things to learn):
 
-1) Tags and users to be searchable
-2) Add redux
-3) Add routing
-4) Add pagination
-5) Add animation
-6) Add testing
+1) Tags and users to be searchable.
+2) Implement redux.
+3) Implement routing.
+4) Understand and implement PropTypes.
+5) Add animation.
+6) Implement pagination.
 7) Select favorite image functionality.
-8) Fully filterable
-9) Investigate and implement Hooks.
+8) Fully filterable.
+9) Understand and implement Hooks.
+10) Implement testing.
