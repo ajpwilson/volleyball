@@ -9,7 +9,7 @@ import styles from './app.module.css';
 const axiosInstance = axios.create({
   baseURL: 'https://api.flickr.com/services/rest/',
   params: {
-    api_key: '5e263bab53c7c3bfc9350ef4256a1ae7',
+    api_key: process.env.REACT_APP_API_KEY,
     method: 'flickr.photos.search',
     safe_search: 1,
     format: 'json',
